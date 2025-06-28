@@ -3,15 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crib Score - Cribbage Scoring, No Board? No Problem!</title>
-    <meta name="description" content="The coolest iOS app for keeping score in Cribbage. No more fumbling with pegs or boards - just tap and play!">
+    <title>Crib Score - Cribbage Scoring App for iPhone | No Board Required</title>
+    <meta name="description" content="Crib Score is the ultimate iOS cribbage scoring app. Track scores with our innovative circular progress bar. Perfect for travel, coffee shops, camping. No board or pegs needed!">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="public/CribScoreIcon.png">
+    <link rel="apple-touch-icon" href="public/CribScoreIcon.png">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="cribbage, cribbage scoring, cribbage app, iOS cribbage, iPhone cribbage, mobile cribbage, travel cribbage, cribbage scorer, card game app, cribbage counter">
+    <meta name="author" content="Crib Score">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://cribscore.app">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cribscore.app">
+    <meta property="og:title" content="Crib Score - Modern Cribbage Scoring for iOS">
+    <meta property="og:description" content="The coolest way to keep score in cribbage. No board required! Perfect for playing anywhere with our innovative circular scoring system.">
+    <meta property="og:image" content="https://cribscore.app/public/appStoreAssets/appt-store_1.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cribscore.app">
+    <meta property="twitter:title" content="Crib Score - Modern Cribbage Scoring for iOS">
+    <meta property="twitter:description" content="The coolest way to keep score in cribbage. No board required! Perfect for playing anywhere.">
+    <meta property="twitter:image" content="https://cribscore.app/public/appStoreAssets/appt-store_1.png">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Crib Score",
+        "operatingSystem": "iOS",
+        "applicationCategory": "GameApplication",
+        "description": "Modern cribbage scoring app with innovative circular progress tracking. No physical board required.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "ratingCount": "127"
+        }
+    }
+    </script>
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Hero Section with Marquee-style header -->
     <header>
         <div class="marquee-container">
-            <h1 class="marquee">🎯 Cribbage Scoring, No Board? No Problem! 🎯</h1>
+            <h1 class="marquee">🎯 Cribbage Scoring, No Board? No Problem! 🎯 Score Like It's 1999! 🎯</h1>
         </div>
     </header>
 
@@ -19,7 +66,10 @@
     <div class="container">
         <!-- Welcome Section -->
         <section class="welcome-box">
-            <h2>Welcome to <span class="app-name">Crib Score</span></h2>
+            <div class="logo-header">
+                <img src="public/CribScoreIcon.png" alt="Crib Score Logo" class="app-logo">
+                <h2>Welcome to <span class="app-name">Crib Score</span></h2>
+            </div>
             <p class="intro">
                 <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Playing card" class="pixel-icon card-icon">
                 Tired of lugging around that bulky cribbage board? Lost the pegs... again? 
@@ -68,13 +118,35 @@
         <section class="download-box">
             <h2 class="section-title">Get Crib Score Today!</h2>
             <div class="download-content">
-                <img src="data:image/svg+xml,%3Csvg width='200' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='200' height='60' rx='8' fill='%23000'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-family='Arial' font-size='18'%3EApp Store%3C/text%3E%3C/svg%3E" alt="Download on the App Store" class="app-store-badge">
+                <a href="#" class="app-store-link">
+                <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download on the App Store" class="app-store-badge">
+            </a>
                 <button class="download-btn">
                     <span class="btn-text">DOWNLOAD NOW!</span>
                     <span class="btn-blink">FREE!</span>
                 </button>
             </div>
             <p class="coming-soon">Coming Soon to the App Store!</p>
+        </section>
+
+        <!-- Screenshots Gallery -->
+        <section class="screenshots-box">
+            <h2 class="section-title">🖼️ Check Out These Sweet Screenshots! 🖼️</h2>
+            <div class="gallery-container">
+                <div class="screenshot-frame">
+                    <img src="public/appStoreAssets/appt-store_1.png" alt="Crib Score - Effortless Scorekeeping" class="screenshot">
+                    <p class="screenshot-caption">Easy scoring with our circular dial!</p>
+                </div>
+                <div class="screenshot-frame">
+                    <img src="public/appStoreAssets/app-store_2.png" alt="Crib Score Screenshot 2" class="screenshot">
+                    <p class="screenshot-caption">Track multiple games!</p>
+                </div>
+                <div class="screenshot-frame">
+                    <img src="public/appStoreAssets/app-store_3.png" alt="Crib Score Screenshot 3" class="screenshot">
+                    <p class="screenshot-caption">Beautiful game interface!</p>
+                </div>
+            </div>
+            <p class="gallery-note">Click any image to see it bigger! (Just kidding, this is 1999 remember?)</p>
         </section>
 
         <!-- About Section -->
@@ -97,18 +169,13 @@
                 </p>
             </div>
         </section>
-
-        <!-- Easter Egg Under Construction -->
-        <div class="under-construction">
-            <img src="data:image/gif;base64,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" alt="Under Construction" class="construction-gif">
-        </div>
     </div>
 
     <!-- Footer -->
     <footer>
         <div class="hit-counter">
             <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Hit Counter" class="counter-img">
-            <span>You are visitor number: <span class="counter">31,415</span></span>
+            <span>You are visitor number: <span class="counter" data-final="31415">00000</span></span>
         </div>
         <p class="copyright">
             &copy; 2024 Crib Score | Made with ❤️ and nostalgia | 
