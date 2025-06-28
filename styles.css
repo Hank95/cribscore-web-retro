@@ -1,0 +1,380 @@
+/* === CRIB SCORE RETRO STYLES === */
+/* Web-safe fonts and nostalgic color scheme */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #006633; /* Deep green felt background */
+    background-image: 
+        repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px),
+        repeating-linear-gradient(-45deg, transparent, transparent 35px, rgba(0,0,0,.03) 35px, rgba(0,0,0,.03) 70px);
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header with Marquee Effect */
+header {
+    background: linear-gradient(to bottom, #FFFF00, #FFD700);
+    border-bottom: 4px solid #CC0000;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee {
+    display: inline-block;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 24px;
+    color: #0000FF;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    animation: marquee 15s linear infinite;
+    padding-left: 100%;
+}
+
+@keyframes marquee {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+/* Box Styles - Common for all sections */
+.welcome-box,
+.features-box,
+.download-box,
+.about-box {
+    background-color: #C0C0C0;
+    border: 3px solid #808080;
+    border-radius: 0;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 
+        inset -2px -2px 0 #404040,
+        inset 2px 2px 0 #FFFFFF,
+        4px 4px 8px rgba(0,0,0,0.5);
+}
+
+/* Section Titles */
+h2, .section-title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 28px;
+    color: #000080;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px #FFFFFF;
+}
+
+/* App Name Styling */
+.app-name {
+    color: #FF0000;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Intro Paragraph */
+.intro {
+    font-size: 16px;
+    text-align: center;
+    background-color: #FFFFCC;
+    border: 2px dashed #FF6600;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+/* Pixel Icons */
+.pixel-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+/* Features Table */
+.features-table {
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    margin: 20px 0;
+}
+
+.features-table tr {
+    border-bottom: 1px solid #666666;
+}
+
+.features-table tr:nth-child(even) {
+    background-color: #E6E6FA;
+}
+
+.feature-icon {
+    width: 60px;
+    text-align: center;
+    font-size: 32px;
+    padding: 10px;
+}
+
+.feature-text {
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.feature-text strong {
+    color: #8B0000;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Download Section */
+.download-content {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.app-store-badge {
+    display: block;
+    margin: 0 auto 20px;
+    border: 2px solid #333333;
+}
+
+.download-btn {
+    background: linear-gradient(to bottom, #FF6600, #CC3300);
+    border: 3px outset #FF9900;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 4px 4px 0 #000000;
+    position: relative;
+    transition: all 0.1s;
+}
+
+.download-btn:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 #000000;
+}
+
+.download-btn:active {
+    border-style: inset;
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+
+.btn-blink {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #FFFF00;
+    color: #FF0000;
+    padding: 2px 8px;
+    font-size: 12px;
+    border: 2px solid #FF0000;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+.coming-soon {
+    text-align: center;
+    color: #666666;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+/* About Section */
+.about-content {
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Links */
+a {
+    color: #0000FF;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #800080;
+}
+
+a:hover {
+    color: #FF0000;
+    background-color: #FFFF00;
+}
+
+/* Under Construction Easter Egg */
+.under-construction {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.construction-gif {
+    width: 60px;
+    height: 60px;
+    opacity: 0.7;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    border-top: 4px solid #FFD700;
+}
+
+.hit-counter {
+    margin-bottom: 20px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+}
+
+.counter {
+    color: #00FF00;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.copyright {
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.copyright a {
+    color: #00FFFF;
+}
+
+.best-viewed {
+    font-size: 10px;
+    color: #999999;
+    font-style: italic;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .marquee {
+        font-size: 18px;
+    }
+    
+    h2, .section-title {
+        font-size: 24px;
+    }
+    
+    .features-table {
+        font-size: 13px;
+    }
+    
+    .feature-icon {
+        font-size: 24px;
+        width: 50px;
+    }
+    
+    .download-btn {
+        font-size: 18px;
+        padding: 12px 30px;
+    }
+    
+    .about-content {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .marquee {
+        font-size: 16px;
+        animation-duration: 10s;
+    }
+    
+    h2, .section-title {
+        font-size: 20px;
+    }
+    
+    .intro {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .features-table {
+        font-size: 12px;
+    }
+    
+    .feature-icon {
+        display: none;
+    }
+    
+    .feature-text {
+        padding: 10px;
+    }
+    
+    .download-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+        letter-spacing: 1px;
+    }
+    
+    .app-store-badge {
+        width: 150px;
+        height: auto;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 320px) {
+    body {
+        font-size: 12px;
+    }
+    
+    .marquee {
+        font-size: 14px;
+    }
+    
+    h2, .section-title {
+        font-size: 18px;
+    }
+    
+    .welcome-box,
+    .features-box,
+    .download-box,
+    .about-box {
+        padding: 15px;
+        margin: 15px 0;
+    }
+}
